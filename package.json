@@ -1,6 +1,18 @@
 {
   "name": "syncthreads-project",
   "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "homepage": "https://github.com/Satturevanth/Project-Repo#readme",
+  "bugs": {
+    "url": "https://github.com/Satturevanth/Project-Repo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satturevanth/Project-Repo.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
@@ -8,10 +20,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
