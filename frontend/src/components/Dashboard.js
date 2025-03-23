@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   // Fetch dashboard data & check authentication
   useEffect(() => {
-    const token = localStorage.getItem("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQyNjU1MTM3LCJleHAiOjE3NDI2NTg3Mzd9.A74oWDybiOgDKzQhxKQQRxx2z5-VZ5A4yY-C-slEH5s");
+    const token = localStorage.getItem("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQyNzQxODYwLCJleHAiOjE3NDI3NDU0NjB9.NGWY6Db9UYmRUSVdXIk4TEa2NlmelL4Oymqy4FeF4-U");
 
     if (!token) {
       navigate("/"); // Redirect to login if no token
@@ -16,7 +16,7 @@ const Dashboard = () => {
     }
 
     // Simulating API call to get user details (replace with actual API)
-    axios.get("http://localhost:5000/api/dashboard", {
+    axios.get('https://project-repo-2.onrender.com/api/dashboard', {
       headers: { Authorization: `Bearer ${token}` },
     })
     .then((res) => {
@@ -33,7 +33,7 @@ const Dashboard = () => {
 
   // Logout function
   const handleLogout = () => {
-    localStorage.removeItem("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQyNjU1MTM3LCJleHAiOjE3NDI2NTg3Mzd9.A74oWDybiOgDKzQhxKQQRxx2z5-VZ5A4yY-C-slEH5s");  // Remove JWT token from frontend
+    localStorage.removeItem("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQyNzQxODYwLCJleHAiOjE3NDI3NDU0NjB9.NGWY6Db9UYmRUSVdXIk4TEa2NlmelL4Oymqy4FeF4-U");  // Remove JWT token from frontend
     window.location.href = "/";  // Redirect to login page
   };
 

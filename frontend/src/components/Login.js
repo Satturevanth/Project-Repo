@@ -10,18 +10,26 @@ const Login = ({ setAuth }) => {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/login", { username, password });
-      localStorage.setItem("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQyNjU1MTM3LCJleHAiOjE3NDI2NTg3Mzd9.A74oWDybiOgDKzQhxKQQRxx2z5-VZ5A4yY-C-slEH5s", res.data.token);
+      // Send login request to backend
+      const res = await axios.post('https://project-repo-2.onrender.com/api/login', { username, password });
+      
+      // Store the JWT token received from the backend in localStorage
+      localStorage.setItem("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQyNzQxODYwLCJleHAiOjE3NDI3NDU0NjB9.NGWY6Db9UYmRUSVdXIk4TEa2NlmelL4Oymqy4FeF4-U", res.data.token);
+      
+      // Set authentication state to true
       setAuth(true);
+      
+      // Redirect to the dashboard after successful login
       navigate("/dashboard");
     } catch (err) {
+      // If login fails, show error message
       setError("Invalid credentials");
     }
   };
 
   return (
     <div className="login-container d-flex flex-column justify-content-center">
-      <div className="login-card ">
+      <div className="login-card">
         <h2>Login</h2>
         <input
           type="text"
@@ -36,8 +44,8 @@ const Login = ({ setAuth }) => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <form className="ree">
-        <input className="check" type="checkbox" name="rr" value="on"/>
-        <p className="para">Remember Me</p>
+          <input className="check" type="checkbox" name="rr" value="on" />
+          <p className="para">Remember Me</p>
         </form>
         <button onClick={handleLogin}>Login</button>
         {error && <p className="error-message">{error}</p>}
