@@ -13,6 +13,10 @@ This is a full-stack web application that integrates a React frontend with a Nod
 ### **GitHub URL (Deployed on Git):**
 [https://github.com/Satturevanth/Project-Repo](https://github.com/Satturevanth/Project-Repo)
 
+## Figma Portfolio
+You can view the design and UI components of this project on my Figma portfolio: [https://www.figma.com/design/KGNRTGOACFCTMwXFuiYtD6/Project-Repo?t=ucLBl8MIcXTkCC94-1](https://www.figma.com/community/file/1485871127290878885) 
+
+
 ## **Project Setup**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) for the frontend and Node.js/Express for the backend.
@@ -26,7 +30,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## **Getting Started**
 
-### **1. Backend Setup (Node.js & Express)**
+### ** Backend Setup (Node.js & Express)**
 1. Clone the repository and navigate to the `backend` directory.
 2. Install dependencies:
    ```bash
@@ -94,3 +98,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/tro
+
+
+### **Steps for the Final Submission:**
+
+1. **Add the Figma Portfolio Link:**
+   - Replace the placeholder `https://www.figma.com/community/file/1485871127290878885` with your actual Figma portfolio link.
+
+2. **Ensure Code Quality:**
+   - Make sure the code is organized, well-commented, and follows the best practices.
+
+3. **Test Locally:**
+   - Ensure the app works as expected locally, including the login system, map integration, and dashboard.
+
+4. **Deploy the Project:**
+   - Ensure both the frontend and backend are deployed properly and that the live URLs are functioning.
+
+5. **Create a ZIP file (Optional for submission):**
+   - If you want to submit as a ZIP, compress the entire project directory into a `.zip` file (including both frontend and backend folders).
+   - Alternatively, you can submit the link to your GitHub repository.
+
+6. **Submit:**
+   - Include the GitHub repository link or ZIP file in the submission form.
+
+### **To Add the Figma Link:**
+- Make sure the link to your Figma portfolio is correctly added to the `README.md` file as mentioned.
+
+---
+
+This should make your `README.md` file complete and ready for submission! If you need any further adjustments, feel free to ask!
