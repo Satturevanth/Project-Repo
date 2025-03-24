@@ -126,4 +126,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ---
 
-This should make your `README.md` file complete and ready for submission! If you need any further adjustments, feel free to ask!
+ *** Submission! Completed *** 
