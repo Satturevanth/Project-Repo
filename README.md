@@ -1,16 +1,36 @@
-﻿# Getting Started with Create React App
+﻿# Full-Stack React Application with Map and Authentication
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Overview**
+This is a full-stack web application that integrates a React frontend with a Node.js backend. The app features user authentication and a map view using the Leaflet mapping library. The app uses JWT for secure authentication and provides a dashboard with interactive components.
 
-## User id and Password ##
+### **Frontend URL (Deployed on Vercel):**
+[https://frontend-49rjim4vb-revanths-projects-163f2d7c.vercel.app](https://frontend-49rjim4vb-revanths-projects-163f2d7c.vercel.app)
 
- Username: "admin", Password: "password123"
- 
- Username: "testuser", Password: "test123" 
+### **Backend URL (Deployed on Render):**
+[https://project-repo-2.onrender.com](https://project-repo-2.onrender.com)
 
-## Available Scripts
+---
+### **GitHub URL (Deployed on Git):**
+[https://github.com/Satturevanth/Project-Repo](https://github.com/Satturevanth/Project-Repo)
 
-In the project directory, you can run:
+## **Project Setup**
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) for the frontend and Node.js/Express for the backend.
+
+### **User Credentials for Login:**
+
+- **Username**: admin
+- **Password**: password123
+
+---
+
+## **Getting Started**
+
+### **1. Backend Setup (Node.js & Express)**
+1. Clone the repository and navigate to the `backend` directory.
+2. Install dependencies:
+   ```bash
+   npm install
 
 ### `npm start`
 
